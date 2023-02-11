@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--El funcionamiento es sencillo, un formulario donde llenas tus datos (nombre, nacionalidad,edad
+y al llenarlo te tiene que regresar una lista con las personas invitadas que rellenaron el form-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Bienvenidos a mi fiesta</h1>
+
+  <h2>Por favor, confirmar asistencia:</h2>
+
+  <form class="formulario">
+    Nombre <input type="text" name="name" id="name">
+    <br>
+    Edad <input type="number" name="age" id="age">
+    <br> <!--Le quite "/" eran 3 etiquetas en las etiquetas <br> ya que no lleva de cierre"
+    aunque de igual manera funciona asi <br /> -->
+
+
+
+     <!--NOTA: no lo e hecho funcionar, en la noche de hoy le voy a pegar un ratito-->
+    Nacionalidad
+    <select name="nationality" id="nationality">
+      <option value="ar">Argentina</option>
+      <option value="mx">Mexicana</option>
+      <option value="per">Peruana</option>
+      <option value="vnzl">Venezolana</option>
+    </select>
+    <br>
+    <input type="submit">
+  </form>
+
+  <div>
+    <!--Aqui cambie el h2 por un h3 ya que arriba ya teniamos previamente uno.-->
+    <h3>Lista de invitados</h3>
+    
+    
+
+  </div>
+<!--Al igual que la vez pasada le quite un punto en el src ya que no lo encontraba.-->
+  <script src="./formulario.js"></script>
+</body>
+
+</html>
